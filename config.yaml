@@ -34,7 +34,7 @@ params:
     # Where the main hero button links to
     buttonlink: "https://play.google.com/"
     # Hero image (from static/images/___)
-    image: illustrations/dark.png
+    image: illustrations/symptio.png
     # Footer logos (from static/images/logos/clients/___.svg)
     clientlogos:
     #- systek

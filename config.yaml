@@ -16,7 +16,7 @@ params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy 
-  description: 
+  description: Your COVID 19 symptom tracker
   navbarlogo:
   # Logo (from static/images/logos/___)
     image: logos/logo4.svg
@@ -149,10 +149,12 @@ params:
       icon: github
     #- link: https://github.com/crisis-hackers
     #  icon: dribbble
-    #- link: https://facebook.com/#
-    #  icon: facebook
+    - link: https://www.facebook.com/sympt.io/
+      icon: facebook
     - link: https://twitter.com/q_tracker
       icon: twitter
+    - link: https://www.instagram.com/sympt.io/
+      icon: instagram
     #- link: https://bitbucket.org/#
     #  icon: bitbucket
     #bulmalogo: false

@@ -7124,6 +7124,19 @@ body #backtotop a {
   /* Firefox 18- */
   color: #cecece; }
 
+.main-subtitle {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #3a3a3a; }
+
+.main-subtitle > strong {
+  color: #3e5378; }
+
 .feature {
   width: 220px;
   height: 229px;
@@ -7132,7 +7145,6 @@ body #backtotop a {
   background-color: #ffffff; }
 
 .symptom-checker-text {
-  width: 186px;
   height: 40px;
   font-family: Poppins;
   font-size: 14px;
@@ -7141,11 +7153,10 @@ body #backtotop a {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: center;
+  text-align: left;
   color: #009abf; }
 
 .self-assessment-test-text {
-  width: 166px;
   height: 28px;
   font-family: Poppins;
   font-size: 16px;
@@ -7153,6 +7164,17 @@ body #backtotop a {
   font-stretch: normal;
   font-style: normal;
   line-height: 1.75;
+  letter-spacing: normal;
+  color: #00878e; }
+
+.see-covid-in-your-area-text {
+  height: 28px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
   letter-spacing: normal;
   color: #00878e; }
 

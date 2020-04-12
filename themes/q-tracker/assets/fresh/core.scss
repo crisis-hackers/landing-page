@@ -18,6 +18,23 @@ Main SCSS file / Fresh
 @import 'partials/responsive';
 @import 'partials/utils';
 
+.main-subtitle {
+    // width: 371px;
+    // height: 140px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #3a3a3a;
+}
+
+.main-subtitle > strong {
+  color: #3e5378;
+}
+
 .feature {
     width: 220px;
     height: 229px;
@@ -27,7 +44,6 @@ Main SCSS file / Fresh
   }
 
 .symptom-checker-text {
-    width: 186px;
     height: 40px;
     font-family: Poppins;
     font-size: 14px;
@@ -36,13 +52,12 @@ Main SCSS file / Fresh
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: center;
+    text-align: left;
     color: #009abf;
   }
 
   
   .self-assessment-test-text {
-    width: 166px;
     height: 28px;
     font-family: Poppins;
     font-size: 16px;
@@ -50,6 +65,18 @@ Main SCSS file / Fresh
     font-stretch: normal;
     font-style: normal;
     line-height: 1.75;
+    letter-spacing: normal;
+    color: #00878e;
+  }
+
+  .see-covid-in-your-area-text {
+    height: 28px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
     letter-spacing: normal;
     color: #00878e;
   }

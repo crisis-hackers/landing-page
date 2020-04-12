@@ -22,12 +22,13 @@
             </figure> -->
             <div class="media-content mt-50">
               <div class="content">
-                <div class="is-centered">
+                <div class="has-text-centered">
                   <img src="{{ printf "/images/features/%s.svg" .icon | relURL }}">
                 </div>
-                <p>
+                <div>&nbsp;</div>
+                <p class="has-text-centered">
                   <span class="icon-box-title">{{ .title }}</span>
-                  <span class="icon-box-text">{{ .text | markdownify }}</span>
+                  <span class="icon-box-text" style="text-align: left;">{{ .text | markdownify }}</span>
                 </p>
               </div>
             </div>

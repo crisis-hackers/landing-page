@@ -1,7 +1,7 @@
-<!-- {{- $section4 := .Site.Params.section4 }}
-{{- $title    := index $section4 "title" }}
-{{- $subtitle := index $section4 "subtitle" }}
-{{- $clients  := index $section4 "clients" }}
+{{- $sectionMedia := .Site.Params.sectionMedia }}
+{{- $title    := index $sectionMedia "title" }}
+{{- $subtitle := index $sectionMedia "subtitle" }}
+{{- $media  := index $sectionMedia "media" }}
 <section class="section is-medium section-secondary">
   <div class="container">
 
@@ -14,7 +14,7 @@
 
     <div class="content-wrapper">
       <div class="columns is-vcentered">
-        {{- range $clients }}
+        {{- range $media }}
         <div class="column is-4">
           <figure class="testimonial">
             <blockquote>
@@ -31,4 +31,4 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>

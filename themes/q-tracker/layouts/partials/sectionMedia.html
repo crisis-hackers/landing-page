@@ -1,12 +1,12 @@
-<!-- {{- $section4 := .Site.Params.section4 }}
-{{- $title    := index $section4 "title" }}
-{{- $subtitle := index $section4 "subtitle" }}
-{{- $clients  := index $section4 "clients" }}
-<section class="section is-medium section-secondary">
+{{- $sectionMedia := .Site.Params.sectionMedia }}
+{{- $title    := index $sectionMedia "title" }}
+{{- $subtitle := index $sectionMedia "subtitle" }}
+{{- $media  := index $sectionMedia "media" }}
+<section class="section is-medium">
   <div class="container">
 
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 light-text is-spaced">{{ $title }}</h2>
+      <h2 class="title is-2 is-spaced">{{ $title }}</h2>
       {{- with $subtitle }}
       <h3 class="subtitle is-5 light-text">{{ . }}</h3>
       {{- end }}
@@ -14,8 +14,8 @@
 
     <div class="content-wrapper">
       <div class="columns is-vcentered">
-        {{- range $clients }}
-        <div class="column is-4">
+        {{- range $media }}
+        <div class="column is-3">
           <figure class="testimonial">
             <blockquote>
               {{ .quote }}
@@ -31,4 +31,4 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>

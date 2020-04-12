@@ -15,6 +15,10 @@
     {{ partial "section3.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.sectionMedia }}
+    {{ partial "sectionMedia.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.section4 }}
     {{ partial "section4.html" . }}
     {{ end }}

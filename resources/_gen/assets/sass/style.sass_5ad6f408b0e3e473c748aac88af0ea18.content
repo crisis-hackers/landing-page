@@ -6394,6 +6394,11 @@ Hero styles
 .hero-foot img.partner-logo {
   height: 70px; }
 
+.store-logo {
+  width: 126px;
+  height: 41px;
+  object-fit: contain; }
+
 /* ==========================================================================
 Fresh Footer
 ========================================================================== */
@@ -7106,5 +7111,12 @@ body #backtotop a {
 :-moz-placeholder {
   /* Firefox 18- */
   color: #cecece; }
+
+.feature {
+  width: 220px;
+  height: 229px;
+  border-radius: 5px;
+  box-shadow: -1px 13px 20px 0 #f0f2f4;
+  background-color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

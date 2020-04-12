@@ -18,3 +18,10 @@ Main SCSS file / Fresh
 @import 'partials/responsive';
 @import 'partials/utils';
 
+.feature {
+    width: 220px;
+    height: 229px;
+    border-radius: 5px;
+    box-shadow: -1px 13px 20px 0 #f0f2f4;
+    background-color: #ffffff;
+  }

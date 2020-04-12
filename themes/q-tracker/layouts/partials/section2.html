@@ -13,15 +13,18 @@
     </div>
     <div class="columns">
       {{- range $features }}
-        <div class="column is-3 mt-60 box">
-          <article class="media icon-box">
+        <div class="column is-3 mt-60 box" style="border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; height: 229px;">
+          <!-- <article class="media icon-box">
             <figure class="media">
               <p class="image">
-                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+                <img src="{{ printf "/images/features/%s.svg" .icon | relURL }}">
               </p>
-            </figure>
+            </figure> -->
             <div class="media-content mt-50">
               <div class="content">
+                <div class="is-centered">
+                  <img src="{{ printf "/images/features/%s.svg" .icon | relURL }}">
+                </div>
                 <p>
                   <span class="icon-box-title">{{ .title }}</span>
                   <span class="icon-box-text">{{ .text | markdownify }}</span>

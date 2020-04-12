@@ -4,19 +4,49 @@
 {{- $media  := index $sectionMedia "media" }}
 <section class="section is-medium">
   <div class="container">
-
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 is-spaced">{{ $title }}</h2>
-      {{- with $subtitle }}
-      <h3 class="subtitle is-5 light-text">{{ . }}</h3>
-      {{- end }}
-    </div>
+    <div class="columns">
+        <div class="column is-centered-tablet-portrait is-11">
+          <h1 class="title section-title">{{ $title }}</h1>
+          <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+          <!-- <div class="divider"></div> -->
+        </div>
+        <div class="column is-pulled-right is-1">
+            <img src="images/illustrations/big-quote.svg" class="Combined-Shape">
+        </div>
+      </div>
 
     <div class="content-wrapper">
       <div class="columns is-vcentered">
         {{- range $media }}
         <div class="column is-3">
-          <figure class="testimonial">
+            <a href="{{ .url }}">
+            <div class="card" style="width: 408px; height: 296px; border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; background-color: #ffffff;">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48 is-rounded">
+                        <img src="{{ .img }}" alt="Medium image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4" style="color: #00878e; font-size: 18px; font-weight: normal; font-stretch: normal; font-style: normal;line-height: 1.33;letter-spacing: normal;">
+                        {{ .name }}
+                      </p>
+                      <p class="subtitle is-6">{{ .job }}</p>
+                    </div>
+                  </div>
+              
+                  <div class="content">
+                    " {{ .quote }}
+                    <!-- <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br> -->
+                    <!-- <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+                  </div>
+                </div>
+              </div>
+              </a>
+
+          <!-- <figure class="testimonial">
             <blockquote>
               {{ .quote }}
             </blockquote>
@@ -25,10 +55,21 @@
               <h5>{{ .name }}</h5>
               <span>{{ .job }}</span>
             </div>
-          </figure>
+          </figure> -->
         </div>
         {{- end }}
       </div>
     </div>
   </div>
+</section>
+
+<section class="section section-feature-grey is-medium" style="color: #2f466e">
+    <div class="container">
+        <div class="title-wrapper has-text-centered">
+          <h1 class="title is-1 is-spaced">Winners of Hack the Crisis - Slovakia. </h1>
+        </div>
+        <p>
+            A dedicated team of 10 enthusiastic problem solvers, analysts, healthcare professionals, data scientists, developers and designers bring to you Slovakia’s first COVID symptom tracker
+        </p>
+    </div>
 </section>

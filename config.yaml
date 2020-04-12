@@ -90,17 +90,17 @@ params:
    features:
    - title: 
      text: Self-report how you feel to help stop the spread of COVID-19!
-     # Icon (from /images/illustrations/icons/___.svg)
-     icon: laptop-globe
+     # Icon (from /images/features/___.svg)
+     icon: virus
    - title: TRACKING
      text: 
-     icon: doc-sync
+     icon: docs
    - title: MAPPING YOUR SYMPTOMS
      text: 
-     icon: mobile-feed
+     icon: keep-distance
    - title: DAILY UPDATES
      text: 
-     icon: mobile-feed
+     icon: mask
 #  section3:
 #    title: One platform
 #    subtitle: To rule them all
@@ -110,19 +110,24 @@ params:
   sectionMedia:
     title: In the media
     media:
-    - name: ".Týždeň"
+    - name: ".týždeň"
       quote: Slováci hackovali koronakrízu. Navrhli, ako si uľahčiť život v izolácii aj ako pomôcť nemocniciam.
       # job: Accountant
-      img: 1
+      img: images/logos/tyzden-black.svg
+      url: https://www.tyzden.sk/spolocnost/63820/slovaci-hackovali-koronakrizu-navrhli-ako-si-ulahcit-zivot-v-izolacii-aj-ako-pomoct-nemocniciam/
     - name: "RTVS"
-      quote:  Die App und der zweitbeste Vorschlag Namens „Q-Tracker" können auch an dem internationalen Unterstützungsprojekt teilnehmen, wo sie einen Investor für die Entwicklung des Prototyps finden können.
-      img: 2
+      quote:  Die App und der zweitbeste Vorschlag Namens „Q-Tracker" können auch an dem internationalen Unterstützungsprojekt teilnehmen
+      img: images/logos/rtvs.svg
+      url: https://dersi.rtvs.sk/clanky/nachrichten/221797/virtuelles-projekt-hack-the-crisis-slovakia
     - name: "HN online"
       quote: Najväčší hackathon v dejinách Slovenska priniesol digitálne nápady do boja s COVID-19
-      img: 3
+      img: images/logos/hnonline.png
+      url: https://style.hnonline.sk/tech/2126568-hack-the-crisis-najvacsi-hackathon-v-dejinach-slovenska-priniesol-digitalne-napady-do-boja-s-covid-19
     - name: "PC revue"
+      # job: Seesame, s.r.o.
       quote: Uspeli nápady na odbremenenie zdravotníkov, predvídanie nakazených aj ľahší život v izolácii
-      img: 4
+      img: images/logos/pcrevue.png
+      url: https://www.pcrevue.sk/a/Uspeli-napady-na-odbremenenie-zdravotnikov--predvidanie-nakazenych
   section4:
    title: In the media
   #  subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry

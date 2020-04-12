@@ -7,7 +7,40 @@
 <footer class="footer footer-dark">
   <div class="container">
     <div class="columns">
-      <div class="column">
+      <div class="column is-3">
+        <h3 class="title is-5">COMPANY</h3>
+        <h4 class="title is-6">About us</h4>
+        <h4 class="title is-6">Team</h4>
+        <h4 class="title is-6">Carreers</h4>
+        <h4 class="title is-6">Contact</h4>
+      </div>
+      <div class="column is-3">
+        <h3 class="title is-5">INVEST</h3>
+        <h4 class="title is-6">Features</h4>
+        <h4 class="title is-6">How it works</h4>
+        <h4 class="title is-6">Pricing</h4>
+        <!-- <h4 class="title is-6">Login</h4> -->
+      </div>
+
+      <div class="column is-3">
+        <h3 class="title is-5">LEGAL</h3>
+        <h4 class="title is-6">Privacy</h4>
+        <h4 class="title is-6">Terms</h4>
+        <h4 class="title is-6">Security</h4>
+      </div>
+
+      <div class="column is-3">
+        <nav class="level is-mobile">
+          <div class="level-left">
+            {{- range $socialMedia }}
+            <a class="level-item" href="{{ .link }}">
+              <span class="icon"><i class="fa fa-{{ .icon }}"></i></span>
+            </a>
+            {{- end }}
+          </div>
+        </nav>
+      </div>
+      <!-- <div class="column">
         <div class="footer-logo">
           <img src="{{ printf "/images/logos/%s" $logo | relURL }}">
         </div>
@@ -51,7 +84,7 @@
             {{- end }}
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </footer>

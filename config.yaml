@@ -144,9 +144,9 @@ params:
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/crisis-hackers
-      # Icons are from Font Awesome
-      icon: github
+    # - link: https://github.com/crisis-hackers
+    #   # Icons are from Font Awesome
+    #   icon: github
     #- link: https://github.com/crisis-hackers
     #  icon: dribbble
     - link: https://www.facebook.com/sympt.io/

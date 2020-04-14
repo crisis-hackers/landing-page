@@ -47,11 +47,11 @@ params:
    - title: Home
      url: /
    - title: Info
-     url: /
+     url: /#info
    - title: Team
-     url: /
+     url: /#team
    - title: Contact
-     url: /
+     url: /#contact
   #- title: Dropdown
   #  sublinks:
   #  - title: Dropdown item

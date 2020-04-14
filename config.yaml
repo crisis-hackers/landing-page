@@ -136,6 +136,15 @@ params:
      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
      job: Accountant
      img: 1
+  sectionTeam:
+   title: Our team
+   image: illustrations/team.png
+  #  subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+   #clients:
+   #- name: .Týždeň
+   #  quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat $
+   #  job: Accountant
+   #  img: 1
   section5: true
   footer:
     # Logo (from /images/logos/___)

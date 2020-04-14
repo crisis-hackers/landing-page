@@ -23,6 +23,10 @@
     {{ partial "section4.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.sectionTeam }}
+    {{ partial "team.html" . }}
+    {{ end }}
+    
     {{ if .Site.Params.section5 }}
     {{ partial "section5.html" . }}
     {{ end }}

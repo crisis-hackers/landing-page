@@ -164,6 +164,8 @@ params:
       icon: twitter
     - link: https://www.instagram.com/sympt.io/
       icon: instagram
+    - link: https://www.linkedin.com/company/symptio
+      icon: linkedin
     #- link: https://bitbucket.org/#
     #  icon: bitbucket
     #bulmalogo: false

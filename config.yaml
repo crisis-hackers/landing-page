@@ -22,7 +22,7 @@ params:
     image: logos/logo4.svg
     link: /
   font:
-    name: "Open Sans"
+    name: "Roboto"
     sizes: [400,600]
   hero:
     # Main hero title

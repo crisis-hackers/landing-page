@@ -52,6 +52,8 @@ params:
      url: /#team
    - title: Contact
      url: /#contact
+  #  - title: SK
+  #    url: /sk
   #- title: Dropdown
   #  sublinks:
   #  - title: Dropdown item
@@ -162,7 +164,7 @@ params:
      title: MEDICAL DOCTOR
    - name: JÁN MARGETA
      image: illustrations/faces/jan.png
-     title: MEDICAL IMAGE SCIENTIST
+     title: MEDICAL IMAGUNG SCIENTIST
 
   #  image: illustrations/team.png
   #  subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry

@@ -4,25 +4,26 @@
 {{- $members       := index $sectionTeam "members" }}
 <section class="section section-feature-grey is-medium" id="team">
   <div class="container">
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">{{ $title }}</h2>
-      <!--h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3-->
-    </div>
+    <h2 class="title is-2">{{ $title }}</h2>
 
     <div class="columns is-multiline is-gapless">
       {{- range $members }}
       <div class="column is-3">
-        <span>
-        <img class="grayscale" src="{{  printf "/images/%s" .image | relURL }}" width="100%">
-        <div style="pointer-events: none;">
-          <h3 class="is-title is-3">
-            {{ .name }}
-          </h3>
-          <h4 class="is-title is-5">
-            {{ .title }}
-          </h4>
+
+        <div class="card">
+            <figure class="image">
+              <img class="grayscale" src="{{  printf "/images/%s" .image | relURL }}">
+            </figure>
+          <div class="is-overlay" style="left: 0.5em; bottom: 0.5em; top: auto; pointer-events: none; line-height: 1.5;">
+            <h3 class="is-size-5 has-text-white-bis">
+              {{ .name }}
+            </h3>
+            <h4 class="is-size-7 has-text-white-bis">
+              {{ .title }}
+            </h4>
+          </div>
         </div>
-      </span>
+
       </div>
       {{- end }}
     </div>

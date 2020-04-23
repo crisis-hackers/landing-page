@@ -30,9 +30,9 @@ params:
     # Hero subtitle (optional)
     subtitle: Introducing **Quarantina**, your personal Healthcare Assistant, who helps you monitor, track and improve your health with actionable health information related to COVID 19.
     # Button text
-    buttontext: Get it on Google Play
+    # buttontext: Get it on Google Play
     # Where the main hero button links to
-    buttonlink: "https://play.google.com/"
+    # buttonlink: "https://play.google.com/"
     # Hero image (from static/images/___)
     image: illustrations/symptio.png
     # Footer logos (from static/images/logos/clients/___.svg)
@@ -137,7 +137,7 @@ params:
      job: Accountant
      img: 1
   sectionTeam:
-   title: Our team
+   title: Behind Sympt.io
    members:
    - name: JAKUB KMEC
      image: illustrations/faces/jakub.png
@@ -155,7 +155,7 @@ params:
      image: illustrations/faces/raunak.png
      title: UI DESIGNER
    - name: DOMINIK SIVÁK
-     image: illustrations/faces/priti.png
+     image: illustrations/faces/dominik.png
      title: FULL STACK DEVELOPER
    - name: ADRIANA FURDOVÁ
      image: illustrations/faces/adriana.png

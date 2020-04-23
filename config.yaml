@@ -138,7 +138,33 @@ params:
      img: 1
   sectionTeam:
    title: Our team
-   image: illustrations/team.png
+   members:
+   - name: JAKUB KMEC
+     image: illustrations/faces/jakub.png
+     title: ML RESEARCHER AT UCL
+   - name: PETER KOVACS
+     image: illustrations/faces/peter.png
+     title: CONSULTANT
+   - name: TOMAS BEL
+     image: illustrations/faces/tomas.png
+     title: Entrepreneur
+   - name: PRITI RANKA
+     image: illustrations/faces/priti.png
+     title: UX DESIGNER
+   - name: RAUNAK SACHDEVA
+     image: illustrations/faces/raunak.png
+     title: UI DESIGNER
+   - name: DOMINIK SIVÁK
+     image: illustrations/faces/priti.png
+     title: FULL STACK DEVELOPER
+   - name: ADRIANA FURDOVÁ
+     image: illustrations/faces/adriana.png
+     title: MEDICAL DOCTOR
+   - name: JÁN MARGETA
+     image: illustrations/faces/jan.png
+     title: MEDICAL IMAGE SCIENTIST
+
+  #  image: illustrations/team.png
   #  subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
    #clients:
    #- name: .Týždeň

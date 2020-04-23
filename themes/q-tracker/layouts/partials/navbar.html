@@ -78,6 +78,20 @@
           </a>
           {{- end }}
           {{- end }}
+
+
+          {{ if .IsTranslated }}
+          <h4>{{ i18n "translations" }}</h4>
+          <ul>
+              {{ range .Translations }}
+              <li>
+                  <a href="{{ .Permalink }}">{{ .Lang }}</a>
+              </li>
+              {{ end }}
+          </ul>
+          {{ end }}
+  
+          
         </div>
       </div>
   </div>

@@ -1,4 +1,4 @@
-baseURL: https://q-tracker.kardio.me/
+baseURL: https://sympt.io/
 languageCode: en-us
 title: Welcome to Sympt.io
 theme: q-tracker
@@ -11,7 +11,124 @@ markup:
   goldmark:
     renderer:
       unsafe: true # Allows you to write raw html in your md files
+defaultContentLanguage: en
+# defaultContentLanguageInSubdir: true
+languages:
+  en:
+    params:
+    weight: 1
+  sk:
+    title: Vitaj na Sympt.io
+    params:
+      hero:
+        title: Starostlivosť kdekoľvek
+        subtitle: Predstavujeme **Quarantinu**, tvoju osobnú Zdravotnú Asistentku, ktorá ti pomôže monitorovať, zaznamenať a reagovať na vlastný zdravotný stav na základe relevantných informácií spojených s COVID-19.
+        motivation0: Potrvá menej než 40 sekúnd tvojho času aktualizovať svoj denný zdravotný stav!
+        motivation1: Sympt.io ti umožní reportovať akékoľvek príznaky spojené s COVID, ktoré budeš pociťovať. Zozbierané dáta sú bezpečne zdieľané s vybranými vedcami, doktormi a špecialistami pre verejné zdravie, ktorí aktívne pracujú na zastavení šírenia COVID-19.
+        seeHow: Pozri sa na to, ako je zasiahnutá COVID-19 tvoja oblasť!
+      navbar:
+        - title: Domov
+          url: /
+        - title: Info
+          url: /#info
+        - title: Tím
+          url: /#team
+        - title: Kontakt
+          url: /#contact
+      
+      section2:
+        title: Kľúčové funkcie
+        subtitle: 
+        features:
+        - title: 
+          text: Zaznamenaj ako sa cítiš, aby si pomohol šíreniu COVID-19!
+          # Icon (from /images/features/___.svg)
+          icon: virus
+        - title: SLEDOVANIE
+          text: 
+          icon: docs
+        - title: ZMAPUJ SVOJE SYMPTÓMY
+          text: 
+          icon: keep-distance
+        - title: DENNÉ AKTUALIZÁCIE
+          text: 
+          icon: mask
 
+      sectionMedia:
+        title: V médiách
+        winners: Víťazi hackathonu Hack the Crisis - Slovakia.. 
+        winningTeamDescription: Odhodlaný tím 10 entuziastických riešiteľov, analystov, zdravotníckych profesionálov, vedcov, vývojárov a dizajnérov prináša prvú slovenskú aplikáciu na sledovanie symptómov COVID-19.
+        media:
+        - name: ".týždeň"
+          quote: Slováci hackovali koronakrízu. Navrhli, ako si uľahčiť život v izolácii aj ako pomôcť nemocniciam.
+          # job: Accountant
+          img: images/logos/tyzden-black.svg
+          url: https://www.tyzden.sk/spolocnost/63820/slovaci-hackovali-koronakrizu-navrhli-ako-si-ulahcit-zivot-v-izolacii-aj-ako-pomoct-nemocniciam/
+        - name: "RTVS"
+          quote:  Die App und der zweitbeste Vorschlag Namens „Q-Tracker" können auch an dem internationalen Unterstützungsprojekt teilnehmen
+          img: images/logos/rtvs.svg
+          url: https://dersi.rtvs.sk/clanky/nachrichten/221797/virtuelles-projekt-hack-the-crisis-slovakia
+        - name: "HN online"
+          quote: Najväčší hackathon v dejinách Slovenska priniesol digitálne nápady do boja s COVID-19
+          img: images/logos/hnonline.png
+          url: https://style.hnonline.sk/tech/2126568-hack-the-crisis-najvacsi-hackathon-v-dejinach-slovenska-priniesol-digitalne-napady-do-boja-s-covid-19
+        - name: "PC revue"
+          # job: Seesame, s.r.o.
+          quote: Uspeli nápady na odbremenenie zdravotníkov, predvídanie nakazených aj ľahší život v izolácii
+          img: images/logos/pcrevue.png
+          url: https://www.pcrevue.sk/a/Uspeli-napady-na-odbremenenie-zdravotnikov--predvidanie-nakazenych
+
+      sectionTeam:
+        title: Kto tvorí Sympt.io
+        members:
+        - name: JAKUB KMEC
+          image: illustrations/faces/jakub.png
+          title: ML RESEARCHER AT UCL
+        - name: PETER KOVACS
+          image: illustrations/faces/peter.png
+          title: CONSULTANT
+        - name: TOMAS BEL
+          image: illustrations/faces/tomas.png
+          title: Entrepreneur
+        - name: PRITI RANKA
+          image: illustrations/faces/priti.png
+          title: UX DESIGNER
+        - name: RAUNAK SACHDEVA
+          image: illustrations/faces/raunak.png
+          title: UI DESIGNER
+        - name: DOMINIK SIVÁK
+          image: illustrations/faces/dominik.png
+          title: FULL STACK DEVELOPER
+        - name: ADRIANA FURDOVÁ
+          image: illustrations/faces/adriana.png
+          title: MEDICAL DOCTOR
+        - name: JÁN MARGETA
+          image: illustrations/faces/jan.png
+          title: MEDICAL IMAGING SCIENTIST
+
+      footer:
+        company: SPOLOČNOSŤ
+        aboutUs: O nás
+        team: Tím
+        contact: Kontakt
+        features: Vlastnosti
+        howItWorks: Ako to funguje
+        pricing: Cenník
+        legal: PRÁVO
+        privacy: Súkromie
+        terms: Podmienky
+        security: Ochrana
+        invest:
+
+      sectionContactForm:
+        contactUs: Kontaktujte nás
+        name: Meno
+        nameHint: Napíšte svoje meno
+        email: E-mail
+        emailHint: Vložte svoj email
+        message: Správa
+        messageHint: Text správy
+        submit: Odoslať
 params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
@@ -29,12 +146,11 @@ params:
     title: Self Care Anywhere
     # Hero subtitle (optional)
     subtitle: Introducing **Quarantina**, your personal Healthcare Assistant, who helps you monitor, track and improve your health with actionable health information related to COVID 19.
-    # Button text
-    # buttontext: Get it on Google Play
-    # Where the main hero button links to
-    # buttonlink: "https://play.google.com/"
-    # Hero image (from static/images/___)
-    image: illustrations/symptio.png
+    # image: illustrations/symptio.png
+    selfAssessmentText: Self Assessment test
+    motivation0: Takes less than 40 seconds of your time to update your daily health condition!
+    motivation1: Q-Tracker lets you self-report any COVID related health symptoms you experience. Aggregate data is securely shared with select scientists, doctors and public health professionals who are actively working to stop the spread of COVID-19. 
+    seeHow: See how COVID 19 is affected in your area!
     # Footer logos (from static/images/logos/clients/___.svg)
     clientlogos:
     #- systek
@@ -111,6 +227,8 @@ params:
 #    buttonLink: "#"
   sectionMedia:
     title: In the media
+    winners: Winners of Hack the Crisis - Slovakia. 
+    winningTeamDescription: A dedicated team of 10 enthusiastic problem solvers, analysts, healthcare professionals, data scientists, developers and designers bring to you Slovakia’s first COVID symptom tracker
     media:
     - name: ".týždeň"
       quote: Slováci hackovali koronakrízu. Navrhli, ako si uľahčiť život v izolácii aj ako pomôcť nemocniciam.
@@ -130,14 +248,6 @@ params:
       quote: Uspeli nápady na odbremenenie zdravotníkov, predvídanie nakazených aj ľahší život v izolácii
       img: images/logos/pcrevue.png
       url: https://www.pcrevue.sk/a/Uspeli-napady-na-odbremenenie-zdravotnikov--predvidanie-nakazenych
-  section4:
-   title: In the media
-  #  subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-   clients:
-   - name: .Týždeň
-     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-     job: Accountant
-     img: 1
   sectionTeam:
    title: Behind Sympt.io
    members:
@@ -164,7 +274,7 @@ params:
      title: MEDICAL DOCTOR
    - name: JÁN MARGETA
      image: illustrations/faces/jan.png
-     title: MEDICAL IMAGUNG SCIENTIST
+     title: MEDICAL IMAGING SCIENTIST
 
   #  image: illustrations/team.png
   #  subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
@@ -174,7 +284,29 @@ params:
    #  job: Accountant
    #  img: 1
   section5: true
+  sectionContactForm:
+    contactUs: Contact us
+    name: Name
+    nameHint: Enter your name
+    email: E-mail
+    emailHint: Enter your email
+    message: Message
+    messageHint: Write us a message
+    submit: Submit
   footer:
+    company: COMPANY
+    aboutUs: About us
+    team: Team
+    contact: Contact
+    features: Features
+    howItWorks: How it works
+    pricing: Pricing
+    legal: LEGAL
+    privacy: Privacy
+    terms: Terms
+    security: Security
+    invest:
+  
     # Logo (from /images/logos/___)
     logo: default-monochrome.svg
     # Social Media Title

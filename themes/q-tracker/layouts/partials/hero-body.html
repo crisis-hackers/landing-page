@@ -1,9 +1,14 @@
 {{- $hero       := .Site.Params.hero }}
 {{- $title      := index $hero "title" }}
 {{- $subtitle   := index $hero "subtitle" }}
-{{- $buttonText := index $hero "buttontext" }}
-{{- $buttonLink := index $hero "buttonlink" }}
 {{- $image      := index $hero "image" }}
+{{- $selfAssessmentText := index $hero "selfAssessmentText" }}
+{{- $motivation0 := index $hero "motivation0" }}
+{{- $motivation1 := index $hero "motivation1" }}
+{{- $seeHow := index $hero "seeHow" }}
+
+
+
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
@@ -20,18 +25,18 @@
           {{ . }}
         </h2>
         {{ end }}
-        <h2 class="self-assessment-test-text">Self Assessment test</h2>
+        <h2 class="self-assessment-test-text">{{ $selfAssessmentText }}</h2>
         <div class="columns">&nbsp;</div>
         <p>
           <div class="columns is-multiline">
             <div class="column is-12">
-              <a href='https://play.google.com/store/'>
-                <img src="images/logos/bitmap_2.png" srcset="images/logos/bitmap_2@2x.png 2x, images/logos/bitmap_2@3x.png 3x" class="store-logo">
+              <a href='#'>
+                <img src="{{ printf "images/logos/bitmap_2.png" | relURL }}" class="store-logo">
               </a>
             </div>
             <div class="column is-12">
-              <a href='https://play.google.com/store/'>
-                <img src="images/logos/apple/bitmap@3x.png" srcset="images/logos/apple/bitmap@2x.png 2x, images/logos/apple/bitmap@3x.png 3x" class="store-logo">
+              <a href='#'>
+                <img src="{{ printf "images/logos/apple/bitmap@3x.png" | relURL }}" class="store-logo">
               </a>              
             </div>
           </div>
@@ -39,23 +44,23 @@
       </div>
       <div class="column is-7 is-offset-1">
         <figure class="image">
-          <img src="{{ printf "/images/%s" $image | relURL }}" alt="Description">
+          <img src="{{ printf "images/illustrations/symptio.png" | relURL }}" alt="Sympt.io screenshot">
         </figure>
       </div>
     </div>
     <div class="columns is-vcentered">
       <div class="column is-4">
-        <img src="images/illustrations/quarantina-staff.svg" class="Group-2">
+        <img src="{{ printf "images/illustrations/quarantina-staff.svg" | relURL }}" class="Group-2">
       </div>
       <div class="column">
         <h2 class="title is-3">
-          Takes less than 40 seconds of your time to update your daily health condition!
+          {{ $motivation0 }}
         </h2>
         <p>
-         Q-Tracker lets you self-report any COVID related health symptoms you experience. Aggregate data is securely shared with select scientists, doctors and public health professionals who are actively working to stop the spread of COVID-19. 
+          {{ $motivation1 }} 
         </p>
         <a href="https://covid.kardio.me" class="see-covid-in-your-area-text">
-          See how COVID 19 is affected in your area!
+          {{ $seeHow }}
         </a>
       </div>
     </div>

@@ -4,29 +4,43 @@
 {{- $socialMedia := index $footer "socialmedia" }}
 {{- $bulmaLogo   := index $footer "bulmalogo" }}
 {{- $socialMediaTitle    := index $footer "socialmediatitle" }}
+{{- $company := index $footer "company" }}
+{{- $aboutUs := index $footer "aboutUs" }}
+{{- $team := index $footer "team" }}
+{{- $contact := index $footer "contact" }}
+{{- $features := index $footer "features" }}
+{{- $howItWorks := index $footer "howItWorks" }}
+{{- $pricing := index $footer "pricing" }}
+{{- $legal := index $footer "legal" }}
+{{- $privacy := index $footer "privacy" }}
+{{- $terms := index $footer "terms" }}
+{{- $security := index $footer "security" }}
+{{- $invest := index $footer "invest" }}
+
+
 <footer class="footer footer-dark">
   <div class="container">
     <div class="columns">
       <div class="column is-3">
-        <h3 class="footer-item-title">COMPANY</h3>
-        <h4 class="footer-item">About us</h4>
-        <h4 class="footer-item">Team</h4>
-        <h4 class="footer-item">Carreers</h4>
-        <h4 class="footer-item">Contact</h4>
+        <h3 class="footer-item-title">{{ $company }}</h3>
+        <h4 class="footer-item"> {{ $aboutUs }} </h4>
+        <a href="#team"><h4 class="footer-item"> {{ $team }}</h4></a>
+        <!-- <h4 class="footer-item">Carreers</h4> -->
+        <!-- <h4 class="footer-item">Contact</h4> -->
       </div>
       <div class="column is-3">
-        <h3 class="footer-item-title">INVEST</h3>
-        <h4 class="footer-item">Features</h4>
-        <h4 class="footer-item">How it works</h4>
-        <h4 class="footer-item">Pricing</h4>
+        <h3 class="footer-item-title"> {{ $invest }} </h3>
+        <h4 class="footer-item">{{ $features}}</h4>
+        <h4 class="footer-item">{{ $howItWorks}}</h4>
+        <h4 class="footer-item">{{ $pricing}}</h4>
         <!-- <h4 class="footer-item">Login</h4> -->
       </div>
 
       <div class="column is-3">
-        <h3 class="footer-item-title">LEGAL</h3>
-        <h4 class="footer-item">Privacy</h4>
-        <h4 class="footer-item">Terms</h4>
-        <h4 class="footer-item">Security</h4>
+        <h3 class="footer-item-title"> {{ $legal }}</h3>
+        <h4 class="footer-item">{{ $privacy }}</h4>
+        <h4 class="footer-item">{{ $terms }}</h4>
+        <h4 class="footer-item">{{ $security }}</h4>
       </div>
 
       <div class="column is-3">
@@ -43,12 +57,12 @@
         <!-- </div> -->
         <div>
           <a href='#'>
-            <img src="images/logos/bitmap_2.png" style="width: 140px;">
+            <img src="{{ printf "images/logos/bitmap_2.png" | relURL}}" style="width: 140px;">
           </a>
         </div>
         <div>
           <a href='#'>
-            <img src="images/logos/bitmap.png" style="width: 140px;">
+            <img src="{{ printf "images/logos/bitmap.png" | relURL }}" style="width: 140px;">
           </a>              
         </div>
       </div>

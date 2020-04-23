@@ -2,6 +2,9 @@
 {{- $title    := index $sectionMedia "title" }}
 {{- $subtitle := index $sectionMedia "subtitle" }}
 {{- $media  := index $sectionMedia "media" }}
+{{- $winners  := index $sectionMedia "winners" }}
+{{- $winningTeamDescription  := index $sectionMedia "winningTeamDescription" }}
+
 <section class="section is-medium">
   <div class="container">
     <div class="columns">
@@ -25,7 +28,7 @@
                   <div class="media">
                     <div class="media-left">
                       <figure class="image is-48x48 is-rounded">
-                        <img src="{{ .img }}" alt="Medium image">
+                        <img src="{{ .img | relURL}}" alt="Medium image">
                       </figure>
                     </div>
                     <div class="media-content">
@@ -67,14 +70,14 @@
     <div class="container is-success" style="background-color: #2f466e; border-radius: 5px; padding: 40px">
         <div class="columns">
             <div class="column is-3">
-                <img src="images/logos/hack-the-crisis.png" />
+                <img src="{{ printf "images/logos/hack-the-crisis.png" | relURL }}" />
             </div>
             <div class="column is-9">
                 <div class="title-wrapper has-text-left">
-                <h1 class="title is-4 is-spaced has-text-white" style="text-align: left;">Winners of Hack the Crisis - Slovakia. </h1>
+                <h1 class="title is-4 is-spaced has-text-white" style="text-align: left;">{{ $winners }}</h1>
                 </div>
                 <p class="has-text-white">
-                    A dedicated team of 10 enthusiastic problem solvers, analysts, healthcare professionals, data scientists, developers and designers bring to you Slovakia’s first COVID symptom tracker
+                  {{ $winningTeamDescription}}
                 </p>
             </div>
         </div>

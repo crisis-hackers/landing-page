@@ -13,13 +13,30 @@
     </div>
     <div class="columns">
       {{- range $features }}
-        <div class="column is-3 mt-60 box" style="border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; height: 229px;">
-          <!-- <article class="media icon-box">
-            <figure class="media">
-              <p class="image">
-                <img src="{{ printf "/images/features/%s.svg" .icon | relURL }}">
-              </p>
-            </figure> -->
+
+        <!-- <div class="flippable-card-container">
+          <div class="flippable-card">
+            <div class="side">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/jimmy.jpg" alt="Jimmy Eat World"></div>
+            <div class="side back">Jimmy Eat World</div>
+          </div>
+        </div> -->
+        
+        <!-- <div class="column flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              front content
+            </div>
+            <div class="back">
+              back content
+            </div>
+          </div>
+        </div> -->
+
+        <div
+          class="column is-3 mt-60 box"
+          style="border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; height: 229px;"
+        >
             <div class="media-content mt-50">
               <div class="content">
                 <div class="has-text-centered">
@@ -31,8 +48,8 @@
                 </p>
               </div>
             </div>
-          </article>
-         </div>
+
+          </div>
       {{- end }}
     </div>
   </div>

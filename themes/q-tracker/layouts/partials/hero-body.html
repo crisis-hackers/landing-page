@@ -7,7 +7,7 @@
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
-      <div class="column is-5 is-offset-1 landing-caption">
+      <div class="column is-4 landing-caption">
         <!-- <h1 class="title is-6 is-bold is-spaced"> -->
         <h1 class="symptom-checker-text">
         — COVID SYMPTOM CHECKER
@@ -23,29 +23,21 @@
         <h2 class="self-assessment-test-text">Self Assessment test</h2>
         <div class="columns">&nbsp;</div>
         <p>
-          <div class="columns">
-            <div class="column is-6">
+          <div class="columns is-multiline">
+            <div class="column is-12">
               <a href='https://play.google.com/store/'>
-                <img src="images/logos/bitmap.png" srcset="images/logos/bitmap@2x.png 2x, images/logos/bitmap@3x.png 3x" class="store-logo">
+                <img src="images/logos/bitmap_2.png" srcset="images/logos/bitmap_2@2x.png 2x, images/logos/bitmap_2@3x.png 3x" class="store-logo">
               </a>
             </div>
-            <div class="column is-6">
+            <div class="column is-12">
               <a href='https://play.google.com/store/'>
-                <img src="images/logos/apple/bitmap.png" srcset="images/logos/apple/bitmap@2x.png 2x, images/logos/apple/bitmap@3x.png 3x" class="store-logo">
+                <img src="images/logos/apple/bitmap@3x.png" srcset="images/logos/apple/bitmap@2x.png 2x, images/logos/apple/bitmap@3x.png 3x" class="store-logo">
               </a>              
-              <!-- <a class="button cta primary-btn raised" href="{{ $buttonLink }}">
-                {{ $buttonText }}
-              </a> -->
             </div>
-            <!-- <div class="column">
-              <a class="button cta primary-btn raised" href="{{ $buttonLink }}">
-                {{ $buttonText }}
-              </a>
-            </div> -->
           </div>
         </p>
       </div>
-      <div class="column is-5 is-offset-1">
+      <div class="column is-7 is-offset-1">
         <figure class="image">
           <img src="{{ printf "/images/%s" $image | relURL }}" alt="Description">
         </figure>

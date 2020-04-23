@@ -6395,8 +6395,7 @@ Hero styles
   height: 70px; }
 
 .store-logo {
-  width: 126px;
-  height: 41px;
+  width: 200px;
   object-fit: contain; }
 
 .footer-item {

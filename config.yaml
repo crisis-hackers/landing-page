@@ -89,7 +89,7 @@ languages:
           title: CONSULTANT
         - name: TOMAS BEL
           image: illustrations/faces/tomas.png
-          title: Entrepreneur
+          title: ENTREPRENEUR
         - name: PRITI RANKA
           image: illustrations/faces/priti.png
           title: UX DESIGNER
@@ -259,7 +259,7 @@ params:
      title: CONSULTANT
    - name: TOMAS BEL
      image: illustrations/faces/tomas.png
-     title: Entrepreneur
+     title: ENTREPRENEUR
    - name: PRITI RANKA
      image: illustrations/faces/priti.png
      title: UX DESIGNER

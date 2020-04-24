@@ -28,13 +28,13 @@ languages:
         seeHow: Pozri sa na to, ako je zasiahnutá COVID-19 tvoja oblasť!
       navbar:
         - title: Domov
-          url: /
+          url: /sk
         - title: Info
-          url: /#info
+          url: /sk/#info
         - title: Tím
-          url: /#team
+          url: /sk/#team
         - title: Kontakt
-          url: /#contact
+          url: /sk/#contact
       
       section2:
         title: Kľúčové funkcie

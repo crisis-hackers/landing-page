@@ -93,9 +93,9 @@ languages:
         - name: PRITI RANKA
           image: illustrations/faces/priti.png
           title: UX DESIGNER
-        - name: RAUNAK SACHDEVA
-          image: illustrations/faces/raunak.png
-          title: UI DESIGNER
+        #- name: RAUNAK SACHDEVA
+        #  image: illustrations/faces/raunak.png
+        #  title: UI DESIGNER
         - name: DOMINIK SIVÁK
           image: illustrations/faces/dominik.png
           title: FULL STACK DEVELOPER
@@ -263,9 +263,9 @@ params:
    - name: PRITI RANKA
      image: illustrations/faces/priti.png
      title: UX DESIGNER
-   - name: RAUNAK SACHDEVA
-     image: illustrations/faces/raunak.png
-     title: UI DESIGNER
+   #- name: RAUNAK SACHDEVA
+   #  image: illustrations/faces/raunak.png
+   #  title: UI DESIGNER
    - name: DOMINIK SIVÁK
      image: illustrations/faces/dominik.png
      title: FULL STACK DEVELOPER

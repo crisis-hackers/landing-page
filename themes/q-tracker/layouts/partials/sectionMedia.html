@@ -14,7 +14,7 @@
           <!-- <div class="divider"></div> -->
         </div>
         <div class="column is-pulled-right is-1">
-            <img src="images/illustrations/big-quote.svg" class="Combined-Shape">
+            <img src="{{ printf "images/illustrations/big-quote.svg" | relURL }}" class="Combined-Shape">
         </div>
       </div>
 
@@ -23,7 +23,11 @@
         {{- range $media }}
         <div class="column is-3">
             <a href="{{ .url }}">
-            <div class="card" style="width: 408px; height: 296px; border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; background-color: #ffffff;">
+              <figure class="image">
+                <img class="grayscale" src="{{ .img | relURL}}" alt="{{ .quote }}">
+              </figure>
+
+            <!-- <div class="card" style="width: 408px; height: 296px; border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; background-color: #ffffff;">
                 <div class="card-content">
                   <div class="media">
                     <div class="media-left">
@@ -41,13 +45,10 @@
               
                   <div class="content">
                     " {{ .quote }}
-                    <!-- <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br> -->
-                    <!-- <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
                   </div>
                 </div>
-              </div>
-              </a>
+              </div> -->
+          </a>
 
           <!-- <figure class="testimonial">
             <blockquote>
